@@ -32,7 +32,7 @@ setoption name Hash value 2048
     gen_params_str = ""
     for k, v in generation_params.items():
         gen_params_str += f"{k} {v} "
-    cmd = f"generate_training_data count {data_count} book xiangqi-book.epd {gen_params_str}" \
+    cmd = f"generate_training_data count {data_count} book my-book.epd {gen_params_str}" \
           f"set_recommended_uci_options data_format bin output_file_name {output_file}\n"
     return params + cmd
 
